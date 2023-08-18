@@ -9,7 +9,7 @@ Zen of Python!
 7.Readability counts.
 8.
 9.
-10.
+10.Errors should never pass silently.
 11.
 12.
 13.
