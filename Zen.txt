@@ -1,19 +1,24 @@
 Zen of Python!
 
 1.Beautiful is better than ugly.
-2.
+2.Explicit is better than implicit.
 3.
 4.
 5.
 6.
-7.
+7.Readability counts.
 8.
+<<<<<<< HEAD
 9.Although practicality beats purity.
 10.
+=======
+9.
+10.Errors should never pass silently.
+>>>>>>> 1ea2c5550893c164a147ccc5fbc02696e934e0df
 11.
 12.
 13.
-14.
+14.Although that way may not be obvious at first unless you're Dutch.
 15.
 16.
 17.
