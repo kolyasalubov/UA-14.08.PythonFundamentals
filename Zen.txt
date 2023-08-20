@@ -5,7 +5,7 @@ Zen of Python!
 3.
 4.Complex is better than complicated.
 5.
-6.
+6.Sparse is better than dense.
 7.Readability counts.
 8.
 <<<<<<< HEAD
