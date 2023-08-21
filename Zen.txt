@@ -8,13 +8,8 @@ Zen of Python!
 6.Sparse is better than dense.
 7.Readability counts.
 8.
-<<<<<<< HEAD
 9.Although practicality beats purity.
-10.
-=======
-9.
 10.Errors should never pass silently.
->>>>>>> 1ea2c5550893c164a147ccc5fbc02696e934e0df
 11.
 12.In the face of ambiguity, refuse the temptation to guess.
 13.
