@@ -28,5 +28,5 @@ Zen of Python!
 26.
 27.
 28.
-
+42.Flat is better than nested.
 
