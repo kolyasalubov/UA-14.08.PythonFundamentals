@@ -27,4 +27,4 @@ Zen of Python!
 25.
 26.
 27.
-28.
+28. Although practicality beats purity.
