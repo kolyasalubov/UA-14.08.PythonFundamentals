@@ -19,7 +19,7 @@ Zen of Python!
 17.If the implementation is hard to explain, it's a bad idea.
 18.If the implementation is easy to explain, it may be a good idea. 
 19.
-20.
+20.Beautiful is better than ugly.
 21.Explicit is better than implicit.
 22.
 23.
