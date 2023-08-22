@@ -27,8 +27,12 @@
 27.
 28.Although practicality beats purity.
 29.Errors should never pass silently.
+<<<<<<< HEAD
 36.If the implementation is hard to explain, it's a bad idea.
 37.If the implementation is easy to explain, it may be a good idea.
+=======
+33.Although that way may not be obvious at first unless you're Dutch.
+>>>>>>> OstapChyzho/HW2
 38.Namespaces are one honking great idea -- let's do more of those!Beautiful is better than ugly.
 40.Simple is better than complex.
 42.Flat is better than nested.
