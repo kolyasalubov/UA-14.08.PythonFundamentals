@@ -27,5 +27,6 @@ Zen of Python!
 25.
 26.
 27.
-28. Although practicality beats purity.
+28.Although practicality beats purity.
+29.Errors should never pass silently.
 42.Flat is better than nested.
