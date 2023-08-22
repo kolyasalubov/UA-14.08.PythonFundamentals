@@ -31,3 +31,4 @@
 42.Flat is better than nested.
 44.Readability counts.
 40.Simple is better than complex.
+43.Sparse is better than dense.
