@@ -29,4 +29,5 @@ Zen of Python!
 27.
 28.Although practicality beats purity.
 29.Errors should never pass silently.
+37.If the implementation is easy to explain, it may be a good idea.
 42.Flat is better than nested.
