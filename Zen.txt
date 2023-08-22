@@ -29,5 +29,11 @@ Zen of Python!
 27.
 28.Although practicality beats purity.
 29.Errors should never pass silently.
+<<<<<<< HEAD
 37.If the implementation is easy to explain, it may be a good idea.
 42.Flat is better than nested.
+=======
+38.Namespaces are one honking great idea -- let's do more of those!Beautiful is better than ugly.
+42.Flat is better than nested.
+40.Simple is better than complex.
+>>>>>>> main
