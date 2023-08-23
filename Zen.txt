@@ -31,6 +31,7 @@
 36.If the implementation is hard to explain, it's a bad idea.
 37.If the implementation is easy to explain, it may be a good idea.
 38.Namespaces are one honking great idea -- let's do more of those!Beautiful is better than ugly.
+39.Unless explicitly silenced.
 40.Simple is better than complex.
 42.Flat is better than nested.
 43.Sparse is better than dense.
