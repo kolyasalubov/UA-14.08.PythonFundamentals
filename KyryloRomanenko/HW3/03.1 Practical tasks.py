@@ -17,6 +17,13 @@ for i in line_from_zen.split():
 
 print(f'\nNumber "better" in a row: {count_better}')
 print(f'Number "never" in a row: {count_never}')
-print(f'Number "is" in a row: {count_is}\n')
+print(f'Number "is" in a row: {count_is}')
+
+
+line_from_zen_upper = line_from_zen.upper()
+print(f'\nLine in Uppercase: {line_from_zen_upper}')
+
+line_from_zen_replase = line_from_zen.replace('i', '&')
+print(f'\nline with replase letter "i": {line_from_zen_replase}\n')
 
 # second task
