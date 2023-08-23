@@ -27,3 +27,14 @@ line_from_zen_replase = line_from_zen.replace('i', '&')
 print(f'\nline with replase letter "i": {line_from_zen_replase}\n')
 
 # second task
+number = input('Enter your number:\n')
+product = 0
+
+for i in number:
+    product += int(i)
+
+print(f'Your product of the digit of number: {product}\n')
+
+print(f'Your reversed number: {number[::-1]}\n')
+
+print(f"Your sorted number: {''.join(sorted(number))}\n")
