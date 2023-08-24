@@ -35,6 +35,7 @@
 42.Flat is better than nested.
 43.Sparse is better than dense.
 44.Readability counts.
+45.Special cases aren't special enough to break the rules.
 46.Although practicality beats purity.
 49.In the face of ambiguity, refuse the temptation to guess.
 50.Although never is often better than *right* now.
