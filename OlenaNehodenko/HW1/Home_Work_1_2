@@ -1,0 +1,17 @@
+a=float(input("Enter a:  "))
+b=float(input("Enter b:  "))
+c=a+b
+d=a*b
+print('a+b=',c)
+print('a*b=',d)
+if b==0:
+   print("a/b= is't possible. Can't be devided by 0. Enter corect number!")
+else:
+   k=a/b
+   print('a/b=',k)
+g=a**b
+h=a//b
+l=a%b
+print('a**b=',g)
+print('a//b=',h)
+print('a%b=',l)
