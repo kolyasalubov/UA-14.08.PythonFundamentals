@@ -35,8 +35,4 @@
 42.Flat is better than nested.
 43.Sparse is better than dense.
 44.Readability counts.
-<<<<<<< HEAD
-=======
 49.In the face of ambiguity, refuse the temptation to guess.
-
->>>>>>> NehodenkoHelen/HW1
