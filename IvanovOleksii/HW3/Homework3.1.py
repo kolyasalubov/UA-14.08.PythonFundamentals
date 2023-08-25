@@ -26,12 +26,12 @@ is_count = 0
 
 python_philosophy_split = python_philosophy.split()
 
-for i in python_philosophy_split:
-    if i == 'better':
+for index in python_philosophy_split:
+    if index == 'better':
         better_count += 1
-    elif i == 'never':
+    elif index == 'never':
         never_count += 1
-    elif i == 'is':
+    elif index == 'is':
         is_count += 1
 
 print(f'better - {better_count}\n'
