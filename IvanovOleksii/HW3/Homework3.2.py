@@ -18,8 +18,7 @@ print(resoult)
 print('------------')
 
 # the second part
-for i in range(len(number), 0, -1):
-    print(i)
+print(list(reversed(number)))
 print('------------')
 
 # the third part
