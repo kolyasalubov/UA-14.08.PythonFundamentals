@@ -1,3 +1,4 @@
+# the first part
 python_philosophy = """
 Beautiful is better than ugly.
 Explicit is better than implicit.
@@ -38,10 +39,11 @@ print(f'better - {better_count}\n'
       f'never - {never_count}\n'
       f'is - {is_count}')
 
+# the second part
 print('------------')
 print(python_philosophy.upper())
 print('------------')
 
 python_philosophy_list = list(python_philosophy)
-
+# the third part
 print(python_philosophy.replace('i', '&'))
