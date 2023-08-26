@@ -59,5 +59,3 @@ a=a+b
 b=a-b
 a=a-b
 print("Outputs two values:", (a),(b))
-
-
