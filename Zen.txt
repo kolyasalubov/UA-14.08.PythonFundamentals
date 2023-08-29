@@ -23,12 +23,13 @@
 23.
 24.Flat is better than nested.
 25.
-26.
+26.Readability counts.
 27.
 28.Although practicality beats purity.
 29.Errors should never pass silently.
 30.Unless explicity selinced.
 33.Although that way may not be obvious at first unless you're Dutch.
+34.Now is better than never.
 36.If the implementation is hard to explain, it's a bad idea.
 37.If the implementation is easy to explain, it may be a good idea.
 38.Namespaces are one honking great idea -- let's do more of those!Beautiful is better than ugly.
@@ -39,6 +40,9 @@
 44.Readability counts.
 45.Special cases aren't special enough to break the rules.
 46.Although practicality beats purity.
+48.Unless explicitly silenced.
 49.In the face of ambiguity, refuse the temptation to guess.
 50.Although never is often better than *right* now.
-
+52.Now is better than never.
+54.If the implementation is hard to explain, it's a bad idea.
+56.Namespaces are one honking great idea -- let's do more of those
