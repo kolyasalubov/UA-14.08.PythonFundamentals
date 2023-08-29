@@ -21,23 +21,13 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those! 
 """
 
-better_count = 0
-never_count = 0
-is_count = 0
 
-python_philosophy_split = python_philosophy.split()
+words_to_count = ['better', 'never', 'is']
 
-for index in python_philosophy_split:
-    if index == 'better':
-        better_count += 1
-    elif index == 'never':
-        never_count += 1
-    elif index == 'is':
-        is_count += 1
+word_counts = {word: python_philosophy.count(word) for word in words_to_count}
 
-print(f'better - {better_count}\n'
-      f'never - {never_count}\n'
-      f'is - {is_count}')
+for word, count in word_counts.items():
+    print(f'{word} - {count}')
 
 # the second part
 print('------------')
@@ -47,3 +37,4 @@ print('------------')
 python_philosophy_list = list(python_philosophy)
 # the third part
 print(python_philosophy.replace('i', '&'))
+
