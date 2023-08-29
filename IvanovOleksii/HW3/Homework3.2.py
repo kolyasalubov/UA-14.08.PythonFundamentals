@@ -3,7 +3,7 @@ import math
 # the first part
 while True:
     number = input('enter your number:')
-    if len(number) != 4:
+    if len(number) != 4 or not number.isdigit():
         print('Enter four-digit number!!!!!!!')
     else:
         break
