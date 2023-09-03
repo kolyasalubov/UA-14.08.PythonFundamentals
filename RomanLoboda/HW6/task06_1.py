@@ -15,4 +15,4 @@ for n in original_list:
 print("Original list : ",original_list)
 print("Even number that are divisible by 2 : ", even_list)
 print("Odd number, which are divisible by 3 : ", odd_list_3)
-print("Numbers that are not divisible by 2 and 3 : ", not_divisible_2_3)
+
