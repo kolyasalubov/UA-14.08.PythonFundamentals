@@ -1,0 +1,9 @@
+n = int(input("Enter a positiv number: "))
+fib_sequence = [0, 1]
+if n>0:
+    while fib_sequence[-1] + fib_sequence[-2] <= n:
+        fib_next = fib_sequence[-1] + fib_sequence[-2]
+        fib_sequence.append(fib_next)
+    print(f"Fibonacci sequence up to {n} is: {fib_sequence}")
+else:
+    print("Invalid number")
