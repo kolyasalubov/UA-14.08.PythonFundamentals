@@ -1,0 +1,6 @@
+list_int = [1, 2, 3, 4]
+list_float = []
+for integer in list_int:
+    float_item = float(integer)
+    list_float.append(float_item)
+print(list_float)
