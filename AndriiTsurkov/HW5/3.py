@@ -1,4 +1,4 @@
-factorial_calculation_number = input("Please enter a digit to calculate it's factorial: ")
+factorial_calculation_number = input("Enter a number to calculate the factorial: ")
 
 if not factorial_calculation_number.isdecimal():
     print("Error: You have enter not a number!")
