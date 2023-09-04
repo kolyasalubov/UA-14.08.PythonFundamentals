@@ -39,20 +39,42 @@ def circle_area() -> float:
     return math.pi * (radius ** 2)
 
 
-variant = input("""What area do you want to calculate?:
-    1. Rectangle
-    2. Triangle
-    3. Circle
-Enter the number:""")
+def var_input():
+    variant = input("""
+    What area do you want to calculate?:
+        1. Rectangle
+        2. Triangle
+        3. Circle
+    Enter the number:
+    """)
+    while variant not in ('1', '2', '3'):
+        variant = input("""
+    Incorrect input.
+    What area do you want to calculate?:
+        1. Rectangle
+        2. Triangle
+        3. Circle
+    Enter the number:
+    """)
+    else:
+        return variant
 
 
-match variant:
-    case "1":
-        print(f'Area of the rectangle = {rectangle_area()}')
-    case "2":
-        print(f'Area of the triangle = {triangle_area()}')
-    case "3":
-        print(f'Area of the circle = {circle_area()}')
+def match_variant(variant):
+    match variant:
+        case "1":
+            print(f'Area of the rectangle = {rectangle_area()}')
+        case "2":
+            print(f'Area of the triangle = {triangle_area()}')
+        case "3":
+            print(f'Area of the circle = {circle_area()}')
+
+
+def main():
+    variant = var_input()
+    match_variant(variant)
 
 
 
+if __name__ == "__main__":
+    main()
