@@ -39,7 +39,11 @@ def circle_area() -> float:
     return math.pi * (radius ** 2)
 
 
-def var_input():
+def var_input() -> str:
+    """
+    Asked variant and check. if the variat incorrect ask again
+    :return: ones from variant
+    """
     variant = input("""
     What area do you want to calculate?:
         1. Rectangle
@@ -60,7 +64,12 @@ def var_input():
         return variant
 
 
-def match_variant(variant):
+def match_variant(variant) -> None:
+    """
+
+    :param variant: str ("1" or "2" or "3")
+    :return: print
+    """
     match variant:
         case "1":
             print(f'Area of the rectangle = {rectangle_area()}')
