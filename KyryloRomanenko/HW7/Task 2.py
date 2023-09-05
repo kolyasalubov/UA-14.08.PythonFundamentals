@@ -96,8 +96,7 @@ def float_check(arg: str) -> float:
 
 
 def main():
-    variant = var_input()
-    match_variant(variant)
+    match_variant(var_input())
 
 
 if __name__ == "__main__":
