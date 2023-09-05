@@ -8,8 +8,8 @@ def rectangle_area() -> float:
     """
 
     print("To calculate the area of a rectangle, you need to enter the height and width:")
-    height = float(input("Enter height:"))
-    width = float(input("Enter width"))
+    height = float_check(input("Enter height:"))
+    width = float_check(input("Enter width"))
 
     return height * width
 
@@ -21,8 +21,8 @@ def triangle_area() -> float:
     """
 
     print("To calculate the area of a triangle, you need to enter the height and side:")
-    height = float(input("Enter height:"))
-    side = float(input("Enter side"))
+    height = float_check(input("Enter height:"))
+    side = float_check(input("Enter side"))
 
     return 0.5 * height * side
 
@@ -34,7 +34,7 @@ def circle_area() -> float:
     """
 
     print("To calculate the area of a circle, you need to enter the radius:")
-    radius = float(input("Enter radius:"))
+    radius = float_check(input("Enter radius:"))
 
     return math.pi * (radius ** 2)
 
@@ -79,10 +79,25 @@ def match_variant(variant) -> None:
             print(f'Area of the circle = {circle_area()}')
 
 
+def float_check(arg: str) -> float:
+    """
+    Check if arg cannot be float, asked input aghain
+    :param arg: str
+    :return: float arg
+    """
+    while True:
+        try:
+            arg = float(arg)
+            break
+        except ValueError:
+            print("Invalid input. Please enter a float.")
+            arg = input("Enter again:")
+    return arg
+
+
 def main():
     variant = var_input()
     match_variant(variant)
-
 
 
 if __name__ == "__main__":
