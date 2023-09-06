@@ -1,4 +1,13 @@
 def count_characters(input_string):
+    """
+    This function counts the number of characters in the input string.
+
+    Parameters:
+        input_string (str).
+
+    Returns:
+        dict: Keys are characters and values are number of characters.
+    """
     char_count = {}
 
     for char in input_string:
