@@ -4,6 +4,10 @@
 
 # print('Hello, ' + user_name,'!\n','Your age is ' + user_age,'.\n','You live in ' + user_city,'.', sep="" )
 
-card = input("card")
-a = str(card)
-print("************" + a[-4:-1] + a[-1])
+
+
+
+    
+
+    decimal_number = int(5, 2)
+        print(decimal_number)
