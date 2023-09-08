@@ -1,6 +1,7 @@
 # 1 Function for calculation area of a rectangle
-def rectangle_area(a, b):
-    """ Function for calculation area of a rectangle"""
+def rectangle_area(a: str, b: str): 
+    """ Function for calculation
+    area of a rectangle"""
     
     if a.isdecimal() and b.isdecimal():
         a = int(a)
@@ -14,8 +15,9 @@ def rectangle_area(a, b):
 
 
 # 2 Function for calculation area of a triangle
-def triangle_area(a, b, c):
-    """ Function for calculation area of a triangle
+def triangle_area(a: str, b: str, c: str):
+    """ Function for calculation
+    area of a triangle
     p = (a + b + c) / 2
     s = math.sqrt(p*(p-a)*(p-b)*(p-c))
     """
@@ -33,8 +35,9 @@ def triangle_area(a, b, c):
         return 'Error! You have enter not a digit.'
 
 # 3 Function for calculation area of a circle
-def circle_area(radius):
-    """ Function for calculation area of a circle
+def circle_area(radius: str):
+    """ Function for calculation
+    area of a circle
     S = π * r**2
     """
     from math import pi

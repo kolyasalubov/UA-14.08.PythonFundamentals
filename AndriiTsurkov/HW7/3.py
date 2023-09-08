@@ -1,8 +1,7 @@
 # Write a function that calculates the number of caracters included in given string 
 
-def number_of_characters(given_string):
+def number_of_characters(given_string: str) -> dict:
 
-    given_string = list(given_string)
     result_dictonary = {}
  
     for symbol in given_string:
