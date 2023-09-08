@@ -12,4 +12,4 @@ def number_of_characters(given_string):
     return result_dictonary
 
 
-print("Dictnary of characters:", number_of_characters("hello"))
+print("Dictonary of characters:", number_of_characters("hello"))
