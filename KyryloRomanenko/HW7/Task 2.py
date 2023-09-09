@@ -24,7 +24,7 @@ def triangle_area() -> float:
     height = float_check(input("Enter height:"))
     side = float_check(input("Enter side"))
 
-    return 0.5 * height * side
+    return (height * side) ** 0.5
 
 
 def circle_area() -> float:
