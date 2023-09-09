@@ -1,18 +1,29 @@
 import re
 
 
-def input_password():
+def input_password() -> str:
+    """
+    Input password
+    Returns:str inputed password
+    """
     return input("Write your passord and press Enter for checking:\n")
 
 
-def check_password(password):
+def check_password(password: str) -> None:
+    """
+    Checking password
+    Args:
+        password: str
+
+    Returns: print if you password incorrect
+
+    """
     status = 0
 
     while status < 5:
         print(status)
         if len(re.findall("[a-z]", password)) > 0:
             status_a_z = 1
-
         else:
             print("Your passowrd should has minimum 1 letter a-z in lower register")
             password = input("Write your passord and press Enter for checking:\n")
