@@ -24,11 +24,9 @@
 
 # print("Prime numbers in the range from 1 to 10:", prime_numbers)
 
+
+
 # Task2
-
-
-
-
        
 while True:
         Login = input("Enter the login \n")
