@@ -1,0 +1,11 @@
+def largest_number(number1, number2):
+    """
+    Returns the largest number among number1 and number2.
+    Example:
+    largest_number(3, 15)
+    15
+    """
+    if number1 > number2:
+        return number1
+    else:
+        return number2
