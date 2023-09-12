@@ -1,0 +1,71 @@
+#1
+def greet(name):
+    if name == "Johnny":
+        return "Hello, my love!"
+    else:
+        return "Hello, {name}!".format(name=name)
+
+#2
+import math
+def distance(x1, y1, x2, y2):
+    dx = x2 - x1
+    dy = y2 - y1
+    distance_squared = dx**2 + dy**2
+    return round(math.sqrt(distance_squared), 2)
+
+#3
+def filter_words(st):
+    words = st.split()
+    words = [word.lower() for word in words]
+    words[0] = words[0].capitalize()
+    st = ' '.join(words)
+    return(st)
+
+#4
+def number_to_string(num):
+    num_str=str(num)
+    return(num_str)
+
+#5
+def reverse(st):
+    words = st.split()
+    reversed_words = words[::-1]
+    st = ' '.join(reversed_words)
+    return st
+
+#6
+def reverse_list(l):
+    return l[::-1]
+
+#7
+def solution(number):
+    if number < 0:
+        return 0
+    sum = 0
+    for i in range(number):
+        if i % 3 == 0 or i % 5 == 0:
+            sum += i
+    return sum
+
+#8
+def zero_fuel(distance_to_pump, mpg, fuel_left):
+    return fuel_left >= distance_to_pump / mpg 
+
+#9
+def areYouPlayingBanjo(name):
+    if name[0].lower() == "r":
+        return name + " plays banjo"
+    else:
+        return name + " does not play banjo"
+
+#10
+def bool_to_word(boolean):
+    return "Yes" if boolean else "No"
+
+#11
+def count_sheeps(sheep):
+    return sheep.count(True)
+
+#12
+def correct_tail(body, tail):
+    return body[-1] == tail

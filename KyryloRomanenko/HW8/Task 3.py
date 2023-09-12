@@ -24,7 +24,7 @@ def triangle_area() -> float:
     height = float_check(input("Enter height:"))
     side = float_check(input("Enter side"))
 
-    return (height * side) ** 0.5
+    return math.sqrt(height * side)
 
 
 def circle_area() -> float:
@@ -36,7 +36,7 @@ def circle_area() -> float:
     print("To calculate the area of a circle, you need to enter the radius:")
     radius = float_check(input("Enter radius:"))
 
-    return math.pi * (radius ** 2)
+    return math.pi * math.pow(radius, 2)
 
 
 def var_input() -> str:
