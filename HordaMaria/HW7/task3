@@ -1,0 +1,8 @@
+def count_char(input_str):
+    char_count = {}
+    for char in input_str:
+        char_count[char] = char_count.get(char, 0) + 1
+    output = []
+    for char, count in char_count.items():
+       output.append(f'"{char}":{count}')
+    return ", ".join(output)
