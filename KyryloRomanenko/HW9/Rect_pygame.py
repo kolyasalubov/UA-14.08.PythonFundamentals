@@ -32,10 +32,6 @@ while run:
 
     keys = pygame.key.get_pressed()
 
-
-
-
-
     if keys[pygame.K_LEFT]:
         if COORD_X > 0:
             COORD_X = COORD_X - DELTA_STEP
@@ -57,6 +53,3 @@ while run:
                                               HEIGHT_RECTANGLE])
     pygame.display.update()
     clock.tick(FPS)
-
-
-
