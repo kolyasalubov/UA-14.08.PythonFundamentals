@@ -1,5 +1,4 @@
 import tkinter as tk
-from tkinter import font
 from pyowm import OWM
 
 
@@ -17,18 +16,7 @@ def get_weather(city):
     label.config(text=f"""Wheter in "{city}" 
 Carrent temperature:\n {w.temperature('celsius')['temp']} celsius
 {w.detailed_status}
-
 """)
-
-    # print(city)
-    # print(w.detailed_status)  # 'clouds'
-    # print(w.wind())  # {'speed': 4.6, 'deg': 330}
-    # print(w.humidity)  # 87
-    # print(w.temperature('celsius'))  # {'temp_max': 10.5, 'temp': 9.7, 'temp_min': 9.0}
-    # print(w.temperature('celsius')['temp'])
-    # print(w.rain)  # {}
-    # print(w.heat_index)  # None
-    # print(w.clouds)  # 75
 
 
 HEIGHT = 350
