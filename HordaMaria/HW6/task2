@@ -1,0 +1,8 @@
+login = "First"
+while True:
+    user_login = input("Please enter your login: ")
+    if user_login == login:
+        print(f"Welcome, {user_login}")
+        break  
+    else:
+        print("Invalid login. Please try again.")
