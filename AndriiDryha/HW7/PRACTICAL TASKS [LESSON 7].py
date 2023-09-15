@@ -35,22 +35,30 @@
 
 # Task 3
 
-def number_character(word):
+# def number_character(word):
 
-    symbols = list(set(list(word)))
-    number = -1
-    even_numbers = []
+#     symbols = list(set(list(word)))
+#     number = -1
+#     even_numbers = []
 
-    while True:
-        if number < len(symbols):
-            number = number + 1
-            symbol_number = symbols[number] # number of the unique symbol in random order
-            count = word.count(symbol_number) # count of the unique symbol in the entered string
-            even_numbers.append(count)
-        if len(even_numbers) == len(symbols):
-            res = dict(map(lambda i,j : (i,j) , symbols,even_numbers))
-            return res
+#     while True:
+#         if number < len(symbols):
+#             number = number + 1
+#             symbol_number = symbols[number] # number of the unique symbol in random order
+#             count = word.count(symbol_number) # count of the unique symbol in the entered string
+#             even_numbers.append(count)
+#         if len(even_numbers) == len(symbols):
+#             res = dict(map(lambda i,j : (i,j) , symbols,even_numbers))
+#             return res
     
-word = number_character(str(input("Enter everything \n")))
+# word = number_character(str(input("Enter everything \n")))
 
-print ("Count of the unique symbols in your input: " + str(word))
+# print ("Count of the unique symbols in your input: " + str(word))
+
+
+
+lst = [1, 6, 5, 3, 2, 9, 0]    
+a = len(lst) + 1
+index_list = list(range(0, a))
+new_list = list(map(sum, zip(lst,index_list)))
+print(new_list)

@@ -1,12 +1,13 @@
-# # Task1
+# Task1
 
-# even_numbers = [] 
+even_numbers = [] 
 
-# for x in range(1, 11):
-#     if x % 2 == 0:
-#         even_numbers.append(x)  
+for x in range(1, 11):
+    if x % 2 == 0 or x % 5 == 0:
+        even_numbers.append(x)  
+        count = sum(even_numbers)
 
-# print("Even numbers in the range from 1 to 10:", even_numbers)
+print("Even numbers in the range from 1 to 10:", count)
 
 # m3_numbers = []
 
@@ -26,13 +27,13 @@
 
 
 
-# Task2
+# # Task2
        
-while True:
-        Login = input("Enter the login \n")
-        if Login == "First":
-            print("You have successfully logged in.")
-            break
-        else:
-            print("Not correct login. Try again.") 
+# while True:
+#         Login = input("Enter the login \n")
+#         if Login == "First":
+#             print("You have successfully logged in.")
+#             break
+#         else:
+#             print("Not correct login. Try again.") 
 
