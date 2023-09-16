@@ -39,14 +39,13 @@ while run:
     keys = pygame.key.get_pressed()
     
     if keys[pygame.K_LEFT]:
-        COORD_X = max(COORD_X - DELTA_STEP, 0)  # Ensure COORD_X is not less than 0
+        COORD_X = max(COORD_X - DELTA_STEP, 0)  
     if keys[pygame.K_RIGHT]:
-        COORD_X = min(COORD_X + DELTA_STEP, WIDTH_DISPLAY - WIDTH_RECTANGLE)  # Ensure COORD_X is within bounds
+        COORD_X = min(COORD_X + DELTA_STEP, WIDTH_DISPLAY - WIDTH_RECTANGLE)  
     if keys[pygame.K_UP]:
-        COORD_Y = max(COORD_Y - DELTA_STEP, 0)  # Ensure COORD_Y is not less than 0
+        COORD_Y = max(COORD_Y - DELTA_STEP, 0)  
     if keys[pygame.K_DOWN]:
-        COORD_Y = min(COORD_Y + DELTA_STEP, HEIGHT_DISPLAY - HEIGHT_RECTANGLE)  # Ensure COORD_Y is within bounds
-
+        COORD_Y = min(COORD_Y + DELTA_STEP, HEIGHT_DISPLAY - HEIGHT_RECTANGLE)  
     gameDisplay.fill(BLACK_COLOR) 
 
     pygame.draw.rect(gameDisplay, RED_COLOR, [COORD_X, COORD_Y, WIDTH_RECTANGLE, HEIGHT_RECTANGLE])
