@@ -22,6 +22,7 @@ class Rectangle(Polygon):
 
 # Creating an instance of Rectangle
 rect = Rectangle(4, 6)
+
 print(rect)
 print("Area:", rect.area())
 print("Square of Rectangle:", rect.square_rectangle())
