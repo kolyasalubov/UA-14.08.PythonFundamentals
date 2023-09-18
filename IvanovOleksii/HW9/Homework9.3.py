@@ -9,7 +9,7 @@ def get_weather():
 
     owm = OWM(API_KEY)
     mgr = owm.weather_manager()
-    observation = mgr.weather_at_place('London,GB')
+    observation = mgr.weather_at_place(entry_field.get())
     w = observation.weather
 
     clouds = w.detailed_status  # 'clouds'
