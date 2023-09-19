@@ -5,11 +5,6 @@
 #     else:
 #         return "Hello {name}".format(name=name)
 
-
-
-
-
-
 # #No yelling!
 
 # def filter(string):
