@@ -18,9 +18,12 @@ class Triangle(Poligon):
     def find_area(self):
         a, b, c = self.sides
 
-        s = (a + b + c) / 2
-        area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
-        print(f"The area of the triangle is {area}")
+        if a + b > c:
+            s = (a + b + c) / 2
+            area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+            print(f"The area of the triangle is {round(area, 2)}")
+        else:
+            print(f"Triangle with sides {a}, {b}, {c} unpossible")
 
 
 class Rectangle(Poligon):
@@ -30,7 +33,7 @@ class Rectangle(Poligon):
     def find_area(self):
         l, w = self.sides
         area = l * w
-        print(f"The area of the rectangle is {area}")
+        print(f"The area of the rectangle is {round(area, 2)}")
 
 
 def triangle_request():
