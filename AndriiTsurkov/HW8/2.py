@@ -1,41 +1,34 @@
-# # password validity with string function
-# def password_validity_sring(password, min_char_in_password = 6, max_char_in_password = 16):
-#     """Password validity
-#     with string function
-#     """
-#     chars_in_password = "$#@"
+# password validity with string function
+def password_validity_sring(password, min_char_in_password = 6, max_char_in_password = 16):
+    """Password validity
+    with string function
+    """
+    chars_in_password = "$#@"
 
-#     char_count = False
-#     letter_upper = False
-#     letter_lower = False
-#     digit = False
-#     char_in = False
+    char_count = False
+    letter_upper = False
+    letter_lower = False
+    digit = False
+    char_in = False
 
-#     if min_char_in_password <= len(password) and len(password) <= max_char_in_password:
-#         char_count = True
+    if min_char_in_password <= len(password) and len(password) <= max_char_in_password:
+        char_count = True
     
-#     for i in password:
-#         if i.isdigit():
-#             digit = True
-#         if i.isalpha() and i.isupper():
-#             letter_upper = True
-#         if i.isalpha() and i.islower():
-#             letter_lower = True
-#         if i in chars_in_password:
-#             char_in = True
+    for i in password:
+        if i.isdigit():
+            digit = True
+        if i.isalpha() and i.isupper():
+            letter_upper = True
+        if i.isalpha() and i.islower():
+            letter_lower = True
+        if i in chars_in_password:
+            char_in = True
 
-#     # print ("char_count: ",char_count)
-#     # print ("letter_upper: ", letter_upper)
-#     # print ("letter_lower: ", letter_lower)
-#     # print ("digit: ", digit)
-#     # print ("char_in: ", char_in)
+    if char_count and digit and letter_upper and letter_lower and char_in:
+        return True
+    return False
 
-#     if char_count and digit and letter_upper and letter_lower and char_in:
-#         return True
-#     else:
-#         return False
-
-# print(password_validity_sring('012d45F78@1234567'))
+print(password_validity_sring('012d45F78@123456777'))
 
 
 
