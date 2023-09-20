@@ -2,7 +2,7 @@ def user_age():
     try:
         age = int(input("Please enter your age: "))
         if age < 0:
-            raise ValueError("Age cannot be negative")
+            raise ValueError("Age can't be negative")
         if age % 2 == 0:
             print(f"You entered an even age: {age}")
         else:
