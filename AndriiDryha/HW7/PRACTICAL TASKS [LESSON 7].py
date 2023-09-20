@@ -54,4 +54,3 @@ def number_character(word):
 word = number_character(str(input("Enter everything \n")))
 
 print ("Count of the unique symbols in your input: " + str(word))
-
