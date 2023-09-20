@@ -1,4 +1,4 @@
-#Import secont module for user input
+#Created secont module for user input
 import geometry
 def main():
     print("Choose figure's area for calculate?")
@@ -22,6 +22,5 @@ def main():
         print(f"The area of the circle is: {area}")
     else:
         print("Invalid choice. Please enter 1, 2, or 3.")
-
 if __name__ == "__main__":
     main()
