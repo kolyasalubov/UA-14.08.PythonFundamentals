@@ -22,8 +22,14 @@
 
 #     def findArea(self):
 #         a, b = self.sides
-#         area = a * b
-#         print(f"The area of the Rectangle is {area}")
+#         if a > 0 and b > 0:
+#             area = a * b
+#             print(f"The area of the Rectangle is {area}")
+#         else:
+#             print("The side length can not be negative or equal to 0!")
+        
+
+        
 
 # t1 = Rectangle()
 
