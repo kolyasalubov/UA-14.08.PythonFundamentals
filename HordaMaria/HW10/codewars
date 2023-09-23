@@ -1,0 +1,49 @@
+
+# Ball Super Ball
+class Ball(object):
+ def __init__(self, type = "regular"):
+   self.ball_type = type
+ 
+#Color ghosts
+import random
+class Ghost:
+   def __init__(self):
+       colors = ["white", "yellow", "purple", "red"]
+       self.color = random.choice(colors)
+ 
+#Basic subclasses - Adam and Eve
+def God():
+   return [Man(), Woman()]
+class Human(object):
+   pass
+class Man(Human):
+   pass
+class Woman(Human):
+   pass
+ 
+#Classy Classes
+class Person:
+   def __init__(self, name, age):
+       self.name = name
+       self.age = age
+   @property
+   def info(self):
+       return '{}s age is {}'.format(self.name, self.age)
+   
+#Building Spheres
+from math import pi
+class Sphere(object):
+   def __init__(self, radius, mass):
+       self.radius = radius
+       self.mass = mass
+       self.volume = round(4/3 * pi * radius**3, 5)
+       self.surface_area = round(4 * pi * radius**2, 5)
+       self.density = round(self.mass / self.volume, 5)
+   def __getattr__(self, name):
+       return lambda: getattr(self, name[4:])
+ 
+# Dynamic Classes
+def class_name_changer(cls, new_name) :
+   if not new_name[0].isupper() or not new_name.isalnum():
+       raise Error('Invalid class name!')
+   cls.__name__ = new_name
