@@ -13,6 +13,8 @@ class Employee():
     def show_employee(self):
        print(f"Employee: {self.name}, salary: {self.salary}")
 
+    def __del__(self):
+        Employee.employees_counter -= 1
 
 bill = Employee("Bill Steckman", 4500)
 tedd = Employee("Tedd Wilson", 3800)
@@ -22,6 +24,9 @@ Employee.number_of_employees()
 tedd.show_employee()
 stiv.show_employee()
 bill.show_employee()
+
+del bill
+Employee.number_of_employees()
 
 print("\n======================================================")
 print("About class Employee:\t", Employee.__mro__)
