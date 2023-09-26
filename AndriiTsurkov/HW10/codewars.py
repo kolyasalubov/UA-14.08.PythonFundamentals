@@ -81,7 +81,7 @@
 
 # def name_validity_sring(sring):
 #     import re
-#     pattern_string = r'^[A-Z][a-zA-Z0-9_]*$'
+#     pattern_string = r'^[A-Z][a-zA-Z0-9_]{1,}*$'
 #     pattern = re.compile(pattern_string) 
 #     return bool(pattern.match(sring))
 
