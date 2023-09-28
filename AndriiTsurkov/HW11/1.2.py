@@ -17,7 +17,6 @@ class Day_of_week():
         else:
             print(f"{day} is {self.days_of_week.get(day)}.")
 
-
 Day_of_week(input("Plese enter number of day from week: "))
 
 
