@@ -1,0 +1,13 @@
+class Polygon:
+    def __init__(self, sides):
+        self.sides = sides
+
+class Rectangle(Polygon):
+    def __init__(self, length, width):
+        super().__init__([length, width, length, width])  
+
+    def area(self):
+        return self.sides[0] * self.sides[1]
+
+    def __str__(self):
+        return f"A rectangle with length {self.sides[0]} and width {self.sides[1]}"

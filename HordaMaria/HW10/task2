@@ -1,0 +1,16 @@
+class Human:
+    species = "Homosapiens"  
+
+    def __init__(self, name):
+        self.name = name 
+
+    def display_welcome_message(self):
+        print(f"Welcome, {self.name}!")
+
+    @classmethod
+    def get_species(cls):
+        return cls.species
+
+    @staticmethod
+    def arbitrary_message():
+        return "This is a message."
