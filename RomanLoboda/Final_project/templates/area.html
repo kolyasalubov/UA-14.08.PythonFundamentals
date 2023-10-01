@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {{ super() }}
+        <div class="site-identity">
+            <h1> Area of {{area}}</h1>
+        </div>
+    {% for msg in get_flashed_messages() %}
+        <div>{{msg}}</div>
+    {% endfor %}
+
+
+
+    {% if 'rectangle' == area %}
+    <form action="/area/{{area}}" method="post">
+        <p><label>height</label><input type="number" name="height" />
+        <p><label>width</label><input type="number" name="width" />
+        <p><input class = "result" type="submit" value="result"/>
+    </form>
+
+    {% elif 'triangle' == area %}
+    <form action="/area/{{area}}" method="post">
+        <p><label>base</label><input type="number" name="base" />
+        <p><label>height</label><input type="number" name="height" />
+        <p><input class = "result" type="submit" value="result"/>
+    </form>
+
+    {% elif 'circle' == area %}
+    <form action="/area/{{area}}" method="post">
+        <p><label>radius</label><input type="number" name="radius" />
+        <p><input class = "result" type="submit" value="result"/>
+    </form>
+    {% endif %}
+
+{% endblock content %}
