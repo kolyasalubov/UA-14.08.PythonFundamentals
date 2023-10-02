@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="{{ url_for('upload_file') }}" enctype="multipart/form-data" method="POST">
+    <input name="img" type="file"/>
+    <input type="submit"/>
+</form>
+
+{% if img %}
+<img src="{{img}}">
+{% else %}
+
+{% endif %}
+
+{% endblock %}
+
+
+
+
+
