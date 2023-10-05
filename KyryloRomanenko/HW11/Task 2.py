@@ -21,3 +21,7 @@ def input_number(days_dict_def: dict):
 
 
 print(input_number(days_dict))
+
+def main():
+    try:
+        age = int(input("Your age:"))
