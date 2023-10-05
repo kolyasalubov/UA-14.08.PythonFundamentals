@@ -1,5 +1,5 @@
 a = float(input("What is (a)?"))
-b = float(input("What is (b)?"))pwd
+b = float(input("What is (b)?")) 
 plus = a + b
 minus = a- b
 multiplication = a * b
