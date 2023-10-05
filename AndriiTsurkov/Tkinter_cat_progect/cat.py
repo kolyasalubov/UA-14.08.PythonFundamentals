@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox as mb
 import datetime
-import os
+
 
 root = Tk()  # створюєм корневий об'єкт - вікно
 
@@ -14,7 +14,6 @@ root.title("CAT")                       # встановлюємо заголо�
 
 
 icon = PhotoImage(file="./images/iconCat.png")       # альтернативна опція встановлення іконки
-#icon = PhotoImage(file="D:/pythone/git_hub/UA-14.08.PythonFundamentals/AndriiTsurkov/TCP/images/iconCat.png")
 root.iconphoto(False, icon)                         # альтернативна опція встановлення іконки
 
 cats_pictures = PhotoImage(file="./images/2.png")   # створюємо об'єкт зображення
