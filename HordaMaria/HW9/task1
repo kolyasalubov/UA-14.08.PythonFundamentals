@@ -1,0 +1,21 @@
+import random
+
+target_number = random.randint(1, 100)
+attempts = 0
+max_attempts = 10
+
+while attempts < max_attempts:
+    try:
+        guess_num = int(input("Enter the number between 1 and 100: "))
+        attempts += 1
+        if guess_num == target_number:
+            print(f"Congratulations! You guessed the number.")
+            break
+        elif guess_num < target_number:
+            print("The target number is greater. Try again.")
+        else:
+            print("The target number is smaller. Try again.")
+    except ValueError:
+        print("Invalid input")
+else:
+    print(f"You've used {max_attempts} attempts. The target number is {target_number}.")
