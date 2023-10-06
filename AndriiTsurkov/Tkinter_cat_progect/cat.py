@@ -13,7 +13,7 @@ root.wm_geometry("+%d+%d" % (x, y))     # встановлюємо розмір�
 root.title("CAT")                       # встановлюємо заголовок вікна
 
 
-icon = PhotoImage(file="./images/iconCat.png")       # альтернативна опція встановлення іконки
+icon = PhotoImage(file="./images/iconCat.png")      # альтернативна опція встановлення іконки
 root.iconphoto(False, icon)                         # альтернативна опція встановлення іконки
 
 cats_pictures = PhotoImage(file="./images/2.png")   # створюємо об'єкт зображення
@@ -24,7 +24,7 @@ healthCat = 20                          # "здоров'я,"
 leisureCat = 20                         # leisure - "задоволення"
 speed_cat_condition_decreases = 3       # швидкість зменшення стану кота"
 
-menu_flag = False                       # True False, щоб увімкнути гру, після закриття меню
+menu_flag = False         # True False, щоб увімкнути гру, після закриття меню
 
 start_time = datetime.datetime.now()    # Час початку гри
 time_in_game = ""                       # як довго ти в грі
@@ -60,7 +60,7 @@ def heppimin():
         if not menu_flag:
             menu_flag = True        # Flag
             answer = mb.askyesno(title="You lost", message="Do you want to play again?")
-            if answer == True:      # Flag
+            if answer == True:
                 healthCat += 50
                 leisureCat += 50
                 menu_flag = False   # Flag
@@ -68,7 +68,7 @@ def heppimin():
                 game = 1
                 exit()
     elif healthCat >= 100 and leisureCat >= 100:
-        if not menu_flag:           # Flag
+        if not menu_flag:
             menu_flag = True        # Flag
             answer2 = mb.askyesno(title="You win", message="Do you want to play again?")
             if answer2 == True:
