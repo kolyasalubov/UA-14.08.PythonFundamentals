@@ -69,7 +69,7 @@ def calc_characters(input_string):
         else:
             char_count[char] = 1
     return char_count
-input_string = "familly"
+input_string = "family"
 char_count = calc_characters(input_string)
 print(char_count)
 

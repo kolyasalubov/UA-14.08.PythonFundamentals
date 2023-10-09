@@ -1,0 +1,11 @@
+def get_day_of_week(number):
+    days_of_week = {1: "Monday", 2: "Tuesday", 3: "Wednesday", 4: "Thursday", 5: "Friday", 6: "Saturday", 7: "Sunday"}
+    return days_of_week.get(number, "Invalid input. Enter a number from 1 to 7")
+while True:
+    number = input("Enter a number (1-7):")
+    try:
+        number = int(number)
+        day_of_week = get_day_of_week(number)
+        print(f"The day of the week #{number} is {day_of_week}.")
+    except ValueError:
+        print("Invalid input. Please enter a valid number (1-7)")

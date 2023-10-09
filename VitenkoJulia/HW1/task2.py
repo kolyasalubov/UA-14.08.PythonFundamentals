@@ -1,0 +1,16 @@
+a = float(input("What is (a)?"))
+b = float(input("What is (b)?")) 
+plus = a + b
+minus = a- b
+multiplication = a * b
+division = a / b
+exponentiation = a ** b
+integerDivision = a // b
+percentages = a % b
+print(f"a + b = {plus}")
+print(f"a - b = {minus}")
+print(f"a * b = {multiplication}")
+print(f"a / b = {division}")
+print(f"a ** b = {exponentiation}")
+print(f"a // b = {integerDivision}")
+print(f"a % b = {percentages}")

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {{ super() }}
+    <p>On this site you can calculate area of : </p>
+    <ul>
+        {% for i in areas %}
+        <li><a href="/area/{{i}}"> {{i}} </a></li>
+        {% endfor %}
+    </ul>
+
+{% endblock content %}
+
+
+
+
