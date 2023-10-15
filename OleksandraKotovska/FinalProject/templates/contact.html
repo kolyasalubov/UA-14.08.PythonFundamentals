@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} Contact me {% endblock %}</h1>
+
+
+<form class="input_wrapper" id="contactForm" onsubmit="return send();">
+
+    <label for="name">Name</label>
+    <input type="text" name="Name" required placeholder="Your name">
+    
+   
+    <label for="email">Email</label>
+    <input type="email" name="Email" required placeholder="Your email">
+    
+    <label for="message">Message</label>
+    <textarea name="Message" required placeholder="Your message"></textarea>
+   
+    <input class="btn" type="submit" value="Contact me!" id="contactGo">
+  </form>
+
+
+
+
+{% endblock %} 
+
