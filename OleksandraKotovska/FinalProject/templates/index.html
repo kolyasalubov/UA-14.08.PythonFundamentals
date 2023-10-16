@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Latest blog posts {% endblock %}</h1>
+        
+    <div class="blog_wrapper">
+    {% for post in posts %}
+    <div class="posts_wrapper">
+        <a href="{{ url_for('post', post_id=post['id']) }}">
+            <img src="{{url_for('static', filename='/images/2-10.jpg')}}"/>
+            
+            <h2>{{ post['title'] }}</h2>
+        </a>
+        <span class="badge badge-primary">{{ post['created'] }}</span>
+        <a href="{{ url_for('edit', id=post['id']) }}">
+            <span class="badge badge-warning">Edit</span>
+        </a>
+
+        <!-- <form action="{{ url_for('upload_file') }}" enctype="multipart/form-data" method="POST">
+            <input name="img" type="file"/>
+            <input type="submit"/>
+        </form>
+        {% if img %}
+        <img src="{{img}}">
+        {% else %}
+        {% endif %} -->
+
+    </div>
+    {% endfor %}
+
+    
+
+</div>
+
+
+ 
+
+
+{% endblock %}
+
+

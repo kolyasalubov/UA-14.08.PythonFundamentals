@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} Login Page {% endblock %}</h1>
+
+     <form class="input_wrapper" method="POST">
+         <label> Name: </label>
+         <input type="text" placeholder="Your name" name="username">
+         <label> Password: </label>
+         <input type="password" placeholder="Your password" name="password">
+         <input class="btn" type="submit" > 
+
+     </form>
+
+
+{% endblock %} 

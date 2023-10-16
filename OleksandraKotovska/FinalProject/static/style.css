@@ -1,0 +1,123 @@
+footer {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+ }
+
+.navbar-light .navbar-brand {
+    background-image: url("/static/images/logo.png");
+    height: 54px;
+    width: 77px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.navbar-expand-md .navbar-collapse {
+    justify-content: right;
+}
+.bg-light {
+    box-shadow: 0px 1px 19px rgb(47 99 35 / 88%);
+}
+.blog_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+.posts_wrapper {
+    margin: 0 15px;
+}
+.posts_wrapper:hover{
+    box-shadow: 8px 8px 9px gray;
+    transition: .2s ease-out 100ms
+}
+.posts_wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.posts_wrapper h2 {
+    color: #2f6323;
+    margin-top: 5px;
+    font-size: 22px;
+}
+.posts_wrapper a:hover{
+    text-decoration: none;
+}
+h1 {
+    font-weight: 700;
+    color: gray;
+    margin: 20px 0;
+}
+.badge-primary {
+    background: gray;
+    margin-bottom: 15px;
+}
+.form-control:focus {
+    border-color: #2f6323;
+    box-shadow: 0 0 0 0.2rem rgb(47 99 35 / 57%);
+}
+.btn-primary {
+    background-color: #2f6323;
+    border-color: #305228;
+}
+.btn-primary:hover {
+    background-color: #2f6323;
+    border-color: #305228;
+    box-shadow: 8px 8px 9px gray;
+}
+.about img {
+    width: 450px;
+    float: right;
+    margin-left: 30px;
+}
+.input_wrapper input, .input_wrapper textarea {
+    width: 100%;
+    border-radius: 0.25rem;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.input_wrapper textarea {
+    height: auto;
+}
+.input_wrapper input:focus-visible, .input_wrapper textarea:focus-visible{
+    outline: none;
+}
+.input_wrapper input:focus, .input_wrapper textarea:focus {
+    border-color: #2f6323;
+    box-shadow: 0 0 0 0.2rem rgb(47 99 35 / 57%);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.input_wrapper .btn {
+    width: auto;
+    background-color: #2f6323;
+    border-color: #305228;
+    color: #fff;
+    margin-top: 20px;
+}
+.input_wrapper .btn:hover {
+    box-shadow: 8px 8px 9px gray;
+}
+@media (max-width: 767px) {
+    .blog_wrapper {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
