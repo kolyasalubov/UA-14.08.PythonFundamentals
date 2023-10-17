@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} About me {% endblock %}</h1>
+
+<div class="about">
+    <img src="{{url_for('static', filename='/images/2-10.jpg')}}"/>
+    <p>Hi! I'm (my name). I'm a best-selling travel writer who has been teaching people how to travel on a budget for fifteen years.  </p>
+    <p>And I'm here to help you spend less on your next trip. </p>
+    <p>Get my best travel tips and tricks as well as these free guides to help you plan your next trip like a pro:</p>
+    <ul>
+        <li>17 Step Planning Checklist</li>
+        <li>61 High Impact Travel Tips</li>
+        <li>A Suggested Packing List</li>
+        <li>Your Guide to Getting Free Flights</li>
+    </ul>
+    
+</div>
+ 
+
+
+{% endblock %} 
+
