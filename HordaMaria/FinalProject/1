@@ -71,14 +71,14 @@ class MathGame:
             self.question_label.config(text=f"Question {self.question_number}: {num1} {operator} {num2} = ")
             self.answer_entry.delete(0, 'end')
             self.feedback_label.config(text="")
-            self.cat_label.config(text="")  # Clear the cat emoji
+            self.cat_label.config(text="") 
         else:
             self.display_score()
 
     def check_answer(self, event=None):
         user_answer = self.answer_entry.get()
         feedback_text = ""
-        feedback_color = "black"  # Initialize feedback_color with a default value
+        feedback_color = "black" 
         if user_answer.isdigit():
             if int(user_answer) == self.answer:
                 self.score += 1
@@ -90,7 +90,7 @@ class MathGame:
         self.feedback_label.config(text=feedback_text, fg=feedback_color)
         self.cat_label.config(text="😺" if feedback_color == "green" else "😿", font=("Segoe UI Emoji", 36), fg=feedback_color)
         self.question_number += 1
-        self.root.after(1000, self.next_question)  # Move to the next question after a delay
+        self.root.after(1000, self.next_question)  
 
     def display_score(self):
         self.label.config(text=f"Game Over! Your Score: {self.score}/{self.question_number - 1}")
